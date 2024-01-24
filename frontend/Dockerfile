@@ -2,17 +2,6 @@
 #start with node image
 #finally use nginx image
 
-#node image
-#COPY source dest
-#install
-#build
-#nginx image
-#COPY build folder from previous stage to this stage
-#copy nginx conf file to the container
-#start nginx
-
-
-# Stage 1: Build React App
 FROM node:14 as build
 
 WORKDIR /app
