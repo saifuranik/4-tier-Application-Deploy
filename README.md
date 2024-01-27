@@ -1,8 +1,12 @@
 
 Steps Have to Follow 
+
 for more easy read follow this link: https://saifuranik.medium.com/deploy-4-tier-react-node-mongodb-application-with-nginx-67add197577c
 
+
+
 ![1_59gHJeRGZilJhZmm46b6eA](https://github.com/saifuranik/4-tier-Application-Deploy/assets/102476507/f8fed9a2-f197-4d30-b215-836ed3c9a7fa)
+
 
 [ x ] make a Mongodb database (cloud/local container/local server)
 [ x ] connect MongoDB from the backend
