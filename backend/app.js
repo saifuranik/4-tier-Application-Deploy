@@ -84,7 +84,7 @@ app.delete('/goals/:id', async (req, res) => {
 });
 
 mongoose.connect(
-  'mongodb+srv://saifurahmananik:yTtUL7WbTkG92MNV@cluster1.ua8clw8.mongodb.net/?retryWrites=true&w=majority',
+  'mongodb+srv://roxav55514:Gvdie00OmK55u5O3@cluster0.xcagnqs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
