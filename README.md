@@ -5,7 +5,9 @@ for more easy read follow this link: https://saifuranik.medium.com/deploy-4-tier
 
 
 
-![1_59gHJeRGZilJhZmm46b6eA](https://github.com/saifuranik/4-tier-Application-Deploy/assets/102476507/f8fed9a2-f197-4d30-b215-836ed3c9a7fa)
+![4 Tier Application Deployment](https://github.com/saifuranik/4-tier-Application-Deploy/assets/102476507/7380d2df-5554-427e-8fd4-d46418616496)
+
+
 
 
 [ x ] make a Mongodb database (cloud/local container/local server)
