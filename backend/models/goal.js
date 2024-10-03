@@ -1,11 +1,29 @@
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
+// const Schema = mongoose.Schema;
+
+// const goalSchema = new Schema({
+//   text: String
+// });
+
+// const GoalModel = mongoose.model('Goal', goalSchema);
+
+// module.exports = GoalModel;
+
+
+
+
+
+
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const goalSchema = new Schema({
-  text: String
+  text: {
+    type: String,
+    required: true
+  }
 });
 
-const GoalModel = mongoose.model('Goal', goalSchema);
+module.exports = mongoose.model('Goal', goalSchema);
 
-module.exports = GoalModel;

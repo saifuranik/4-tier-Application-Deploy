@@ -1,3 +1,24 @@
+# version: '3.9'
+# services:
+#   api:
+#     build:
+#       context: ./backend  
+#     ports:
+#       - "5000:5000"
+
+#   client:
+#     build:
+#       context: ./frontend 
+#     ports:
+#       - "3000:3000"
+
+#   nginx:
+#     build:
+#       context: ./nginx
+#     ports:
+#       - "80:80"
+
+
 version: '3.9'
 services:
   api:
@@ -5,6 +26,8 @@ services:
       context: ./backend  
     ports:
       - "5000:5000"
+    volumes:
+      - ./backend:/app  # This allows live reloading with nodemon
 
   client:
     build:
@@ -17,3 +40,6 @@ services:
       context: ./nginx
     ports:
       - "80:80"
+    depends_on:
+      - api
+      - client

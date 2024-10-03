@@ -1,12 +1,27 @@
 .goal-item {
-  margin: 1rem 0;
-  padding: 1rem;
-  border: 1px solid #570080;
-  color: white;
-  background-color: #570080;
-  text-align: center;
+  margin: 1.5rem 0;
+  border: 2px solid #0e0e0e;
+  color: #fff;
+  background-color: #f93e05;
   font-size: 1.5rem;
-  font-weight: bold;
-  border-radius: 30px;
+  font-weight: 700;
+  padding: 6px;
+  border-radius: 15px;
   cursor: pointer;
+  animation: glow 8s infinite; /* Adjusted duration for smoother transition */
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(131, 5, 249, 0.644), 0 0 10px rgba(132, 5, 249, 0.3); /* Start and end with purple glow */
+  }
+  25% {
+    box-shadow: 0 0 5px rgba(19, 130, 86, 0.685), 0 0 10px rgba(19, 130, 85, 0.3); /* Transition to green glow */
+  }
+  50% {
+    box-shadow: 0 0 5px rgba(1, 120, 255, 0.6), 0 0 10px rgba(1, 97, 255, 0.3); /* Transition to blue glow */
+  }
+  75% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.6), 0 0 10px rgba(255, 0, 0, 0.3); /* Transition to red glow */
+  }
 }
