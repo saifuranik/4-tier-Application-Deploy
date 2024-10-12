@@ -13,14 +13,16 @@ spec:
     spec:
       containers:
       - name: client
-        image: saifuranik/goals-frontend    #akifboi/goals-frontend  #aakkiiff/goals_project_frontend:6
-
+        image: saifuranik/goals-frontend  
         ports:
         - containerPort: 3000
-
+        resources:                    
+          requests:
+            cpu: "100m"           
+          limits:
+            cpu: "200m"          
 
 ---
-
 
 apiVersion: v1
 kind: Service

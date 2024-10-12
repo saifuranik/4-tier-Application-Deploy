@@ -13,15 +13,16 @@ spec:
     spec:
       containers:
       - name: server
-        image: saifuranik/goals-backend   #aaakkiiff/goals_project_backend:6
-
+        image: saifuranik/goals-backend  
         ports:
         - containerPort: 5000
-
-
+        resources:                     
+          requests:
+            cpu: "100m"                 
+          limits:
+            cpu: "200m"                 
 
 ---
-
 
 apiVersion: v1
 kind: Service
